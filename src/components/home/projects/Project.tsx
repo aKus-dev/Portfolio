@@ -11,7 +11,7 @@ interface Props {
 
 const transitionConfig = {
     type: "spring",
-    duration: 0.55,
+    duration: 1,
     bounce: 0.35
 }
 

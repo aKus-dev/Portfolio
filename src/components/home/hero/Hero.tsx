@@ -47,7 +47,7 @@ const Hero = () => {
                     viewport={viewportConfig}
                     className={styles.text}
                 >
-                   Soy un jóven desarrollador web frontend que esta buscando sus primeras experiencias laborales. Aquí podrás ver las distintas aplicaciones que he realizado, junto con información sobre mí.
+                   Soy un jóven desarrollador web frontend que esta buscando sus primeras experiencias laborales. Aquí podrás ver las distintas aplicaciones que he realizado junto con información sobre mí.
                 </motion.p>
 
 
