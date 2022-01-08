@@ -36,7 +36,7 @@ const About = () => {
                 viewport={viewportConfig}
                 className={styles.subtitle}
             >
-                Soy Agustín Vega, un desarrollador web frontend que es capaz de tomar un diseño y hacerlo realidad mediante interfaces de usuario interactivas y un diseño que se adpate a los distintos dispositivos del mercado.
+                Soy Agustín Vega, un desarrollador web frontend que es capaz de tomar un diseño y hacerlo realidad mediante interfaces de usuario interactivas y un diseño que se adapte a los distintos dispositivos del mercado.
             </motion.h2>
 
             <Personal />

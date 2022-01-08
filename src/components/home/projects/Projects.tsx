@@ -5,7 +5,7 @@ import Project from './Project';
 
 const descriptions = {
     todo: {
-        desc: "Aplicación para registrar distintas tareas la cual cuenta la posibilidad de agregar, eliminar, vaciar y marcar como completada una tarea. Además incluye modo oscuro/claro.",
+        desc: "Aplicación para registrar distintas tareas, la cual cuenta la posibilidad de agregar, eliminar, vaciar y marcar como completada una tarea. Además incluye modo oscuro/claro.",
         url: "https://todoakus.netlify.app/"
     },
     fisica: {
@@ -65,10 +65,10 @@ const Projects = () => {
 
 
             <div className={styles.projectsContainer}>
-                <Project year="2022" url={chat.url} title="Chat institucional" img="chat" description={chat.desc} />
-                <Project year="2022" url={fisica.url} title="Circuitos" img="fisica" description={fisica.desc} />
-                <Project year="2022" url={tienda.url} title="Tienda" img="shop" description={tienda.desc} />
-                <Project year="2022" url={todo.url} title="Todo App" img="todo" description={todo.desc} />
+                <Project year="2022" url={chat.url} title="Chat institucional" img="chat" description={chat.desc} animateX={-50} />
+                <Project year="2022" url={fisica.url} title="Circuitos" img="fisica" description={fisica.desc}  animateX={50} />
+                <Project year="2022" url={tienda.url} title="Tienda" img="shop" description={tienda.desc}  animateX={-50} />
+                <Project year="2022" url={todo.url} title="Todo App" img="todo" description={todo.desc}  animateX={50} />
             </div>
         </section>
     )

@@ -7,12 +7,13 @@ interface Props {
     img: string;
     url: string;
     description: string;
+    animateX:number;
 }
 
 const transitionConfig = {
     type: "spring",
-    duration: 1,
-    bounce: 0.35
+    duration: 1.25,
+    bounce: 0.3
 }
 
 const viewportConfig = {
@@ -21,12 +22,12 @@ const viewportConfig = {
 }
 
 
-const Project = ({ year, title, description, url, img }: Props) => {
+const Project = ({ year, title, description, url, img, animateX }: Props) => {
 
     return (
         <motion.article
-            initial={{ scale: 0}}
-            whileInView={{  scale: 1}}
+            initial={{ opacity: 0, x: animateX}}
+            whileInView={{  opacity: 1, x: 0}}
             transition={transitionConfig}
             viewport={viewportConfig}
             style={{ backgroundImage: `url(../../../img/${img}.jpg)` }}
