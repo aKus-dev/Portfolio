@@ -38,7 +38,7 @@ const Personal = () => {
                     </motion.h3>
 
                     <motion.p className={styles.subtitle} initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} transition={transitionConfig} viewport={viewportConfig} >
-                        19
+                        20
                     </motion.p>
                 </div>
 
@@ -57,11 +57,11 @@ const Personal = () => {
 
             <div>
                 <motion.h3 className={styles.title} initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} transition={transitionConfig} viewport={viewportConfig} >
-                    Intereses:
+                    Estudios:
                 </motion.h3>
 
                 <motion.p className={styles.subtitle} initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} transition={transitionConfig} viewport={viewportConfig} >
-                    Videojuegos, música, fútbol
+                    UTU Informática 
                 </motion.p>
             </div>
 
