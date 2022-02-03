@@ -22,7 +22,7 @@ const Menu = () => {
         const { current: line3 } = refLine3;
 
         if (line1 && line2 && line3) {
-            console.log('asas')
+
             line1.classList.toggle(styles.animateLine1);
             line2.classList.toggle(styles.animateLine2);
             line3.classList.toggle(styles.animateLine3);
