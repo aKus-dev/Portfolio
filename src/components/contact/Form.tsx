@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
-import { FormEvent } from 'react';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { initialValues, handleSubmit, validationSchema } from './formValues';
+
 import styles from '../../styles/contact/form.module.css'
 
 const transitionConfig = {
@@ -13,52 +15,76 @@ const viewportConfig = {
     margin: "0px 0px -100px 0px"
 }
 
-const Form = () => {
+const FormContact = () => {
 
-    const handleSubmit = (e:FormEvent) => {
-        e.preventDefault();
-    };
 
     return (
-        <form className={styles.formContainer} onSubmit={handleSubmit}>
-            <motion.div
-                initial={{ opacity: 0, y: -50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ ...transitionConfig, delay: 0.25 }}
-                viewport={viewportConfig}
-                className={styles.fieldsContainer}
-            >
-                <label className={styles.label}>Tu email</label>
-                <input className={styles.input} type="email" />
-            </motion.div>
+        <Formik
+            onSubmit={handleSubmit}
+            initialValues={initialValues}
+            validationSchema={validationSchema}
+        >
+            {
+                ({ handleSubmit, status }) => (
+                    <Form
+                        noValidate
+                        onSubmit={handleSubmit}
+                        className={styles.formContainer}
+                        action="https://formspree.io/f/mayvedpg"
+                        method="POST"
+                    >
+                        {status && <span className={styles.success}>{status}</span>}
+                        <motion.div
+                            initial={{ opacity: 0, y: -50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ ...transitionConfig, delay: 0.25 }}
+                            viewport={viewportConfig}
+                            className={styles.fieldsContainer}
+                        >
+                            <label className={styles.label}>Tu email</label>
+                            <Field autoComplete="off" name="email" type="email" className={styles.input} />
 
-            <motion.div
-                initial={{ opacity: 0, y: -50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ ...transitionConfig, delay: 0.45 }}
-                viewport={viewportConfig}
-                className={styles.fieldsContainer}
-            >
-                <label className={styles.label}>Mensaje</label>
+                            <span className={styles.error}>
+                                <ErrorMessage name="email" />
+                            </span>
 
-                <textarea className={styles.textarea}>
+                        </motion.div>
 
-                </textarea>
-            </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, y: -50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ ...transitionConfig, delay: 0.45 }}
+                            viewport={viewportConfig}
+                            className={styles.fieldsContainer}
+                        >
+                            <label className={styles.label}>Mensaje</label>
 
-            <motion.button
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                whileHover={{ scale: 1.05 }}
-                transition={{ ...transitionConfig, delay: 0 }}
-                viewport={viewportConfig}
-                className={styles.button}
-            >
-                <i className={`far fa-envelope ${styles.icon}`} ></i>
-                Enviar
-            </motion.button>
-        </form>
+                            <Field name="msg" type="email" className={styles.textarea} as="textarea" />
+
+                            <span className={styles.error}>
+                                <ErrorMessage name="msg" />
+                            </span>
+
+
+
+                        </motion.div>
+
+                        <motion.button
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            whileHover={{ scale: 1.05 }}
+                            transition={{ ...transitionConfig, delay: 0 }}
+                            viewport={viewportConfig}
+                            className={styles.button}
+                        >
+                            <i className={`far fa-envelope ${styles.icon}`} ></i>
+                            Enviar
+                        </motion.button>
+                    </Form>
+                )
+            }
+        </Formik>
     )
 }
 
-export default Form
+export default FormContact;

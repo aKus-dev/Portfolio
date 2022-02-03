@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import styles from '../../styles/contact/contact.module.css'
-import Form from './Form';
+import FormContact from './Form';
 
 const transitionConfig = {
     type: "spring",
@@ -38,7 +38,7 @@ const Contact = () => {
             </motion.h2>
 
         
-            <Form />
+            <FormContact />
 
         </section>
     )

@@ -10,7 +10,7 @@ const Footer = () => {
                     <p className={styles.text}>No dude en comunicarse conmigo en cualquier momento.</p>
 
                     <p className={styles.mail}>
-                        <i className={`far fa-envelope ${styles.icon}`} ></i> temporal@temporal.com
+                        <i className={`far fa-envelope ${styles.icon}`} ></i> agustinvegadev@gmail.com
                     </p>
                 </div>
 
