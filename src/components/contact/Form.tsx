@@ -33,7 +33,7 @@ const FormContact = () => {
                         action="https://formspree.io/f/mayvedpg"
                         method="POST"
                     >
-                        {console.log(status)}
+
                         {status && <span className={styles.success}>{status}</span>}
                         <motion.div
                             initial={{ opacity: 0, y: -50 }}
