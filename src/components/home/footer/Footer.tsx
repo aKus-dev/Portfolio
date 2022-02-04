@@ -7,7 +7,7 @@ const Footer = () => {
 
                 <div className={styles.dataContainer}>
                     <p className={styles.title}>Información de contacto</p>
-                    <p className={styles.text}>No dude en comunicarse conmigo en cualquier momento.</p>
+                    <p className={styles.text}>No dude en comunicarse conmigo.</p>
 
                     <p className={styles.mail}>
                         <i className={`far fa-envelope ${styles.icon}`} ></i> agustinvegadev@gmail.com
@@ -21,12 +21,6 @@ const Footer = () => {
                     <a className={styles.mail} href="https://www.linkedin.com/in/agustin-vega/" target="_blank" rel="noreferrer" >
                         <i className={`fab fa-linkedin ${styles.icon}`} ></i>
                         Linkedin
-                    </a>
-                    
-
-                    <a className={styles.mail} href="#" target="_blank" rel="noreferrer" >
-                        <i className={`fab fa-twitter ${styles.icon}`} ></i>
-                        Próximamente
                     </a>
 
                 </div>
