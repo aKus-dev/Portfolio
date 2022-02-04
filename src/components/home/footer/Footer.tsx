@@ -18,17 +18,16 @@ const Footer = () => {
                     <p className={styles.title}>Redes sociales</p>
                     <p className={styles.text}>Sigueme en mis redes</p>
 
-                    <a className={styles.mail} href="https://twitter.com/" target="_blank" rel="noreferrer" >
-                        <i className={`fab fa-twitter ${styles.icon}`} ></i> 
+                    <a className={styles.mail} href="https://www.linkedin.com/in/agustin-vega/" target="_blank" rel="noreferrer" >
+                        <i className={`fab fa-linkedin ${styles.icon}`} ></i>
+                        Linkedin
+                    </a>
+
+                    <a className={styles.mail} href="#" target="_blank" rel="noreferrer" >
+                        <i className={`fab fa-twitter ${styles.icon}`} ></i>
                         Próximamente
                     </a>
 
-                    <a className={styles.mail} href="https://instagram.com/" target="_blank" rel="noreferrer" >
-                        <i className={`fab fa-instagram ${styles.icon}`} ></i> 
-                        Próximamente
-                    </a>
-
-                    
                 </div>
             </div>
         </footer>
