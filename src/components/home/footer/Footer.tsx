@@ -22,6 +22,7 @@ const Footer = () => {
                         <i className={`fab fa-linkedin ${styles.icon}`} ></i>
                         Linkedin
                     </a>
+                    
 
                     <a className={styles.mail} href="#" target="_blank" rel="noreferrer" >
                         <i className={`fab fa-twitter ${styles.icon}`} ></i>
