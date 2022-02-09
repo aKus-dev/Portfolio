@@ -25,6 +25,7 @@ h2 {
 }
 
 .singleProjectContainer:hover .content {
+    visibility: visible;
     opacity: 1;
 }
 
@@ -36,6 +37,7 @@ h2 {
 .content {
     transition: .35s;
     opacity: 0;
+    visibility: hidden;
     border-radius: .75rem;
     background-color: rgba(15, 20, 30, .9);
     top: 0;

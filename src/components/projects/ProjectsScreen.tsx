@@ -20,6 +20,7 @@ const ProjectsScreen = () => {
                 {
                     descriptionsProjects.map(({ id, title, desc, url, tags }) => (
                         <SingleProject
+                            key={id}
                             title={title}
                             desc={desc}
                             url={url}

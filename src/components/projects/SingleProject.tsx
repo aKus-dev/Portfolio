@@ -21,6 +21,7 @@ const viewportConfig = {
 }
 
 const SingleProject = ({ img, desc, url, title, tags }: SingleProjectProps) => {
+
   return (
     <motion.div
       viewport={viewportConfig}
@@ -33,7 +34,6 @@ const SingleProject = ({ img, desc, url, title, tags }: SingleProjectProps) => {
         backgroundSize: "cover",
         backgroundPosition: "center"
       }}>
-      {/*      <img src={`./img/${img}.jpg`} alt="Chat" /> */}
 
       <div className={styles.content}>
 
@@ -41,11 +41,12 @@ const SingleProject = ({ img, desc, url, title, tags }: SingleProjectProps) => {
 
         <TagContainer>
           {
-            tags.map(tag => <Tag type={tag} />)
+            tags.map(tag => <Tag type={tag} key={tag} />)
           }
         </TagContainer>
 
         <p className={styles.description}>{desc}</p>
+
 
         <a target="_blank" rel="noreferrer" href={url}>
           Ver proyecto  <i className="fas fa-long-arrow-alt-right arrow-right"></i>
