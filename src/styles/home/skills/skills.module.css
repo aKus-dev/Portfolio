@@ -52,7 +52,6 @@
     cursor: pointer;
 }
 
-
 .techContainer div > img:hover {
 
     transform: scale(1.25) rotate(5deg); 
