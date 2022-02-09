@@ -12,6 +12,9 @@ const ProjectsScreen = () => {
 
             <main className={styles.main}>
                 <SingleProject />
+                <SingleProject />
+                <SingleProject />
+                <SingleProject />
             </main>
 
             <Footer />

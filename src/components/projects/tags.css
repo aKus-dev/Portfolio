@@ -1,10 +1,12 @@
 .tags-container {
+    margin: 1.5rem 0;
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
 }
 
 .tag {
+    user-select: none;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.5rem;
     padding: .5rem 1rem;
@@ -27,7 +29,7 @@
 .CSS {
     color: white;;
     background: #006bc0;
-    border: 2.5px solid rgb(39, 57, 216);
+    border: 2.5px solid #044b85;
 }
 
 .JavaScript {
