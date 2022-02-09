@@ -1,0 +1,56 @@
+.tags-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    border-radius: 5rem;
+    font-weight: bold;
+}
+
+.React {
+    color: white;;
+    background: #61dafb;
+    border: 2.5px solid #34bbe0;
+}
+
+.HTML {
+    color: white;;
+    background: #f06224;
+    border: 2.5px solid #cc4106;
+}
+
+.CSS {
+    color: white;;
+    background: #006bc0;
+    border: 2.5px solid rgb(39, 57, 216);
+}
+
+.JavaScript {
+    color: black;
+    background: #f7e018;
+    border: 2.5px solid #d6c317;
+}
+
+.TypeScript {
+    color: white;
+    background: #3178c6;
+    border: 2.5px solid #0f61b8;
+}
+
+.SASS {
+    color: white;
+    background: #d95496;
+    border: 2.5px solid #c92f7c;
+}
+
+.Node {
+    color: white;
+    background: #8ac400;
+    border: 2.5px solid #6a9605;
+}
+

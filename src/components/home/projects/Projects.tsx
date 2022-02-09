@@ -63,7 +63,7 @@ const Projects = () => {
 
                     >
 
-                        <Link to="/about"> Todos mis proyectos  <i className="fas fa-long-arrow-alt-right arrow-right"></i> </Link>
+                        <Link to="/projects"> Todos mis proyectos  <i className="fas fa-long-arrow-alt-right arrow-right"></i> </Link>
                     </motion.button>
 
                     <div className={styles.bar}></div>
