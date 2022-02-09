@@ -11,6 +11,11 @@
     flex-grow: 1;
 }
 
+h2 {
+    font-size: 2rem;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+}
 
 .singleProjectContainer {
     position: relative;

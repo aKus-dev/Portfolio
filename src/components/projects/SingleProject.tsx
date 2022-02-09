@@ -2,22 +2,43 @@ import Tag from "./Tag";
 import TagContainer from "./TagContainer";
 import styles from "./styles.module.css";
 
+interface SingleProjectProps {
+  img:string;
+  desc:string;
+  url:string;
+  title:string;
+  tags: validateTypes[];
+}
 
-const SingleProject = () => {
+
+type validateTypes = 
+| "HTML"
+| "CSS"
+| "JavaScript"
+| "TypeScript"
+| "React"
+| "SASS"
+| "Node";
+
+
+const SingleProject = ({img, desc, url, title, tags}:SingleProjectProps) => {
   return (
     <div className={styles.singleProjectContainer}>
-      <img src="./img/chat.jpg" alt="Chat" />
+      <img src={`./img/${img}.jpg`} alt="Chat" />
 
       <div className={styles.content}>
+
+        <h2>{title}</h2>
+
         <TagContainer>
-          <Tag type="HTML" />
-          <Tag type="CSS" />
-          <Tag type="JavaScript" />
+          {
+            tags.map(tag => <Tag type={tag} /> )
+          }
         </TagContainer>
 
-        <p className={styles.description}>Lorem ipsum. Libero expedita eveniet magni et assumenda accusamus quis debitis fugiat!</p>
+        <p className={styles.description}>{desc}</p>
 
-        <a target="_blank" rel="noreferrer" href="#">
+        <a target="_blank" rel="noreferrer" href={url}>
           Ver proyecto  <i className="fas fa-long-arrow-alt-right arrow-right"></i>
         </a>
 

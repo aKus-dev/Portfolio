@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import styles from '../../../styles/home/projects/projects.module.css'
 import Project from './Project';
 
-const descriptions = {
+export const descriptions = {
     todo: {
         desc: "Aplicación para registrar distintas tareas, la cual cuenta la posibilidad de agregar, eliminar, vaciar y marcar como completada una tarea. Además incluye modo oscuro/claro.",
         url: "https://todoakus.netlify.app/"
@@ -20,6 +20,10 @@ const descriptions = {
     chat: {
         desc: "Aplicación para una escuela, la cual se pueden registrar alumnos y profesores. Cuenta con las funcionalidades de poder enviar consultas y chatear.",
         url: "https://chataurum.000webhostapp.com/"
+    },
+    git: {
+        desc: "Aplicación que permite buscar perfiles de GitHub y ver sus datos.",
+        url: "https://akusgit.vercel.app/"
     }
 }
 
