@@ -52,24 +52,30 @@ const Projects = () => {
                 Proyectos
             </motion.span>
 
-            <motion.h2
-                initial={{ opacity: 0, y: -50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={transitionConfig}
-                viewport={viewportConfig}
-                className={styles.subtitle}
-            >
-               <Link to="projects">  Todos mis proyectos  <i className="fas fa-long-arrow-alt-right arrow-right"></i> </Link>
-            </motion.h2>
+            <div>
+                <div className={styles.barContainer}>
+                    <motion.button
+                        initial={{ opacity: 0, y: -50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={transitionConfig}
+                        viewport={viewportConfig}
+                        className={styles.subtitle}
 
+                    >
 
+                        <Link to="/about"> Todos mis proyectos  <i className="fas fa-long-arrow-alt-right arrow-right"></i> </Link>
+                    </motion.button>
+
+                    <div className={styles.bar}></div>
+                </div>
+            </div>
 
 
             <div className={styles.projectsContainer}>
                 <Project year="2022" url={chat.url} title="Chat institucional" img="chat" description={chat.desc} animateX={-50} />
-                <Project year="2022" url={fisica.url} title="Circuitos" img="fisica" description={fisica.desc}  animateX={50} />
-                <Project year="2022" url={tienda.url} title="Tienda" img="shop" description={tienda.desc}  animateX={-50} />
-                <Project year="2022" url={todo.url} title="Todo App" img="todo" description={todo.desc}  animateX={50} />
+                <Project year="2022" url={fisica.url} title="Circuitos" img="fisica" description={fisica.desc} animateX={50} />
+                <Project year="2022" url={tienda.url} title="Tienda" img="shop" description={tienda.desc} animateX={-50} />
+                <Project year="2022" url={todo.url} title="Todo App" img="todo" description={todo.desc} animateX={50} />
             </div>
         </section>
     )
