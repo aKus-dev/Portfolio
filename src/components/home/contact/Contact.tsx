@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import styles from '../../../styles/home/contact/contact.module.css'
 
 const transitionConfig = {
@@ -28,17 +29,17 @@ const Contact = () => {
                 </motion.span>
 
                 <div className={styles.barContainer}>
-                    <motion.a
+                    <motion.div
                         initial={{ opacity: 0, y: -50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={transitionConfig}
                         viewport={viewportConfig}
                         className={styles.subtitle}
-                        href="/about"
+                      
                     >
 
-                        Lee más sobre mi
-                    </motion.a>
+                        <Link to="/about"> Lee más sobre mi </Link>
+                    </motion.div>
 
                     <div className={styles.bar}></div>
                 </div>

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 import styles from '../../../styles/home/projects/projects.module.css'
 import Project from './Project';
@@ -58,7 +59,7 @@ const Projects = () => {
                 viewport={viewportConfig}
                 className={styles.subtitle}
             >
-                Proyectos personales
+               <Link to="projects">  Todos mis proyectos  <i className="fas fa-long-arrow-alt-right arrow-right"></i> </Link>
             </motion.h2>
 
 

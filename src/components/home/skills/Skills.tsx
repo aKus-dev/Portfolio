@@ -14,7 +14,7 @@ const viewportConfig = {
 
 const Skills = () => {
     return (
-        <div className={styles.container}>
+        <section className={styles.container}>
 
             <motion.span
                 initial={{ opacity: 0, y: -50 }}
@@ -102,7 +102,7 @@ const Skills = () => {
                 </motion.div>
 
             </div>
-        </div>
+        </section>
     )
 }
 

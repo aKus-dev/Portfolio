@@ -7,7 +7,7 @@ interface Props {
     img: string;
     url: string;
     description: string;
-    animateX:number;
+    animateX: number;
 }
 
 const transitionConfig = {
@@ -26,8 +26,8 @@ const Project = ({ year, title, description, url, img, animateX }: Props) => {
 
     return (
         <motion.article
-            initial={{ opacity: 0, x: animateX}}
-            whileInView={{  opacity: 1, x: 0}}
+            initial={{ opacity: 0, x: animateX }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={transitionConfig}
             viewport={viewportConfig}
             style={{ backgroundImage: `url(../../../img/${img}.jpg)` }}

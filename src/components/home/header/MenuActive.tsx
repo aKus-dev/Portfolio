@@ -51,6 +51,13 @@ const MenuActive = ({ visible }: Props) => {
                     Contacto
                 </NavLink>
 
+                <NavLink
+                    className={({ isActive }) => `${styles.link} ${isActive ? styles.active : ''}`}
+                    to="/projects"
+                >
+                    Proyectos
+                </NavLink>
+
             </nav>
 
         </motion.div>
