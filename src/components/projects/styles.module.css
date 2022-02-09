@@ -18,6 +18,9 @@ h2 {
 }
 
 .singleProjectContainer {
+    border-radius: .75rem;
+    height: 40rem;
+    margin: 2rem 0;
     position: relative;
 }
 
@@ -36,15 +39,14 @@ h2 {
     border-radius: .75rem;
     background-color: rgba(15, 20, 30, .9);
     top: 0;
-    padding: 2rem;
     position: absolute;
     height: 100%;
     width: 100%;
+    padding: 2rem;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
 }
 
 .content a {
@@ -53,6 +55,7 @@ h2 {
     gap: 1rem;
     font-size: 2rem;
     color: #FFFFFF;
+    margin-top: 1rem;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -64,7 +67,15 @@ h2 {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
+
+
+
+    .singleProjectContainer img {
+        margin: 0;
+        height: 100%;
+    }
+
     .main {
         display: grid;
         gap: 2rem;

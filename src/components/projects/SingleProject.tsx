@@ -1,6 +1,7 @@
 import Tag from "./Tag";
 import TagContainer from "./TagContainer";
 import styles from "./styles.module.css";
+import { validateTypes } from '../../interfaces/interfaces';
 
 interface SingleProjectProps {
   img:string;
@@ -11,20 +12,14 @@ interface SingleProjectProps {
 }
 
 
-type validateTypes = 
-| "HTML"
-| "CSS"
-| "JavaScript"
-| "TypeScript"
-| "React"
-| "SASS"
-| "Node";
-
-
 const SingleProject = ({img, desc, url, title, tags}:SingleProjectProps) => {
   return (
-    <div className={styles.singleProjectContainer}>
-      <img src={`./img/${img}.jpg`} alt="Chat" />
+    <div className={styles.singleProjectContainer} style={{
+      backgroundImage: `url(./img/${img}.jpg)`,
+      backgroundSize: "cover",
+      backgroundPosition: "center"
+    }}>
+ {/*      <img src={`./img/${img}.jpg`} alt="Chat" /> */}
 
       <div className={styles.content}>
 

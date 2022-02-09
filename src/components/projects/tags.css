@@ -50,9 +50,24 @@
     border: 2.5px solid #c92f7c;
 }
 
+.PHP {
+    color: white;
+    background: #787cb5;
+    border: 2.5px solid #565ba1;
+}
+
+
 .Node {
     color: white;
     background: #8ac400;
     border: 2.5px solid #6a9605;
 }
+
+.API {
+    color: white;
+    background: #e22021;
+    border: 2.5px solid #b90707;
+}
+
+
 
