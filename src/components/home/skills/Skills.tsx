@@ -33,7 +33,7 @@ const Skills = () => {
                 viewport={viewportConfig}
                 className={styles.subtitle}
             >
-                Teconologías
+                Tecnologías
             </motion.h2>
 
             <div className={styles.techContainer}>
