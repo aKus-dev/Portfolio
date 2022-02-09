@@ -1,5 +1,7 @@
 import { DescriptionProjectsProps } from "./interfaces/interfaces"
 
+//? Si quiero agregar nuevos proyectos, modificar SOLO descriptionsProjects
+
 export const descriptionsHome = [
     {
         id: "todo",

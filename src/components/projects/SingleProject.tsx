@@ -1,25 +1,39 @@
+import styles from "./styles.module.css";
+
 import Tag from "./Tag";
 import TagContainer from "./TagContainer";
-import styles from "./styles.module.css";
+
+import { motion } from 'framer-motion';
 import { validateTypes } from '../../interfaces/interfaces';
 
+
 interface SingleProjectProps {
-  img:string;
-  desc:string;
-  url:string;
-  title:string;
+  img: string;
+  desc: string;
+  url: string;
+  title: string;
   tags: validateTypes[];
 }
 
+const viewportConfig = {
+  once: true,
+  margin: "0px 0px -100px 0px"
+}
 
-const SingleProject = ({img, desc, url, title, tags}:SingleProjectProps) => {
+const SingleProject = ({ img, desc, url, title, tags }: SingleProjectProps) => {
   return (
-    <div className={styles.singleProjectContainer} style={{
-      backgroundImage: `url(./img/${img}.jpg)`,
-      backgroundSize: "cover",
-      backgroundPosition: "center"
-    }}>
- {/*      <img src={`./img/${img}.jpg`} alt="Chat" /> */}
+    <motion.div
+      viewport={viewportConfig}
+      initial={{ opacity: 0, x: -100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ type: "spring", duration: 1 }}
+      className={styles.singleProjectContainer}
+      style={{
+        backgroundImage: `url(./img/${img}.jpg)`,
+        backgroundSize: "cover",
+        backgroundPosition: "center"
+      }}>
+      {/*      <img src={`./img/${img}.jpg`} alt="Chat" /> */}
 
       <div className={styles.content}>
 
@@ -27,7 +41,7 @@ const SingleProject = ({img, desc, url, title, tags}:SingleProjectProps) => {
 
         <TagContainer>
           {
-            tags.map(tag => <Tag type={tag} /> )
+            tags.map(tag => <Tag type={tag} />)
           }
         </TagContainer>
 
@@ -39,7 +53,7 @@ const SingleProject = ({img, desc, url, title, tags}:SingleProjectProps) => {
 
       </div>
 
-    </div>
+    </motion.div>
   );
 };
 
