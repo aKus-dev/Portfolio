@@ -36,7 +36,7 @@ export const descriptionsProjects:DescriptionProjectsProps[] = [
         title: "GitHub Profiles",
         desc: "Aplicación que permite buscar perfiles de GitHub y ver sus datos.",
         url: "https://akusgit.vercel.app/",
-        tags: ["HTML", "CSS", "React", "API"]
+        tags: ["HTML", "CSS", "React", "TypeScript", "API"]
     },
     {
         id: "shop",
