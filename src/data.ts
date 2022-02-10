@@ -1,5 +1,6 @@
 import { DescriptionProjectsProps } from "./interfaces/interfaces"
 
+
 //? Si quiero agregar nuevos proyectos, modificar SOLO descriptionsProjects 
 //? El 'id' debe de coincidir con el nombre de la imagen
 
