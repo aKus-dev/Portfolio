@@ -38,7 +38,7 @@ export const descriptionsProjects: DescriptionProjectsProps[] = [
     {
         id: "quiz",
         title: "Quiz",
-        desc: "Aplicación de preguntas y respuestas que cuenta con distitnas dificultades y categorías",
+        desc: "Aplicación de preguntas y respuestas que cuenta con distintas dificultades y categorías",
         url: "https://akusquiz.vercel.app/",
         tags: ["HTML", "SASS", "React", "TypeScript", "API"]
     },
