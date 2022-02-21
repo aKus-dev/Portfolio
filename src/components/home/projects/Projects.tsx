@@ -54,9 +54,9 @@ const Projects = () => {
 
             <div className={styles.projectsContainer}>
                 {
-                    descriptionsHome.map(({id, title, desc, url}) => (
+                    descriptionsHome.map(({id,year, title, desc, url}) => (
                         <Project
-                            year="2022"
+                            year={year}
                             title={title}
                             animateX={-50}
                             img={id}
