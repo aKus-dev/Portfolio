@@ -18,4 +18,4 @@ export interface DescriptionProjectsProps {
   | "React"
   | "SASS"
   | "Node"
-  
+  | "Tailwind"
