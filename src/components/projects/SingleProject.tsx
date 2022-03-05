@@ -30,7 +30,7 @@ const SingleProject = ({ img, desc, url, title, tags }: SingleProjectProps) => {
       transition={{ type: "spring", duration: 1 }}
       className={styles.singleProjectContainer}
       style={{
-        backgroundImage: `url(./img/${img}.jpg)`,
+        backgroundImage: `url(./img/projects/${img}.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "center"
       }}>

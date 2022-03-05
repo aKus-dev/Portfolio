@@ -30,7 +30,7 @@ const Project = ({ year, title, description, url, img, animateX }: Props) => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={transitionConfig}
             viewport={viewportConfig}
-            style={{ backgroundImage: `url(../../../img/${img}.jpg)` }}
+            style={{ backgroundImage: `url(../../../img/projects/${img}.jpg)` }}
             className={styles.container}
         >
 
