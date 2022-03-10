@@ -59,25 +59,18 @@ export const descriptionsProjects: DescriptionProjectsProps[] = [
 
 export const descriptionsHome = [
     {
-        id: "todo",
-        year: "2021",
-        title: "Todo App",
-        desc: "Aplicación para registrar distintas tareas, la cual cuenta la posibilidad de agregar, eliminar, vaciar y marcar como completada una tarea. Además incluye modo oscuro/claro.",
-        url: "https://todoakus.netlify.app/",
+        id: "quiz",
+        year: "2022",
+        title: "Quiz App",
+        desc: "Aplicación de preguntas y respuestas que cuenta con distintas dificultades y categorías.",
+        url: "https://akusquiz.vercel.app/",
     },
     {
-        id: "fisica",
-        year: "2021",
-        title: "Circuitos física",
-        desc: "Aplicación de física que calcula la resistencia total de un circuito y su intensidad. Para ello se han utilizado los circuitos más típicos.",
-        url: "https://appfisica.netlify.app/",
-    },
-    {
-        id: "shop",
-        year: "2021",
-        title: "Tienda virtual",
-        desc: "Aplicación que simula una tienda online, cuenta con distintos productos los cuales se pueden ver sus datos y agregar al carrito.",
-        url: "https://shopakus.netlify.app/",
+        id: "music",
+        year: "2022",
+        title: "Music",
+        desc: "Aplicación que permite buscar y reproducir canciones. Se puede buscar por nombre, banda o género.",
+        url: "https://akusmusic.vercel.app/",
     },
     {
         id: "chat",
@@ -85,5 +78,12 @@ export const descriptionsHome = [
         title: "Chat institucional",
         desc: "Aplicación para una escuela, la cual se pueden registrar alumnos y profesores. Cuenta con las funcionalidades de poder enviar consultas y chatear.",
         url: "https://chataurum.000webhostapp.com/",
+    },
+    {
+        id: "fisica",
+        year: "2021",
+        title: "Circuitos física",
+        desc: "Aplicación de física que calcula la resistencia total de un circuito y su intensidad. Para ello se han utilizado los circuitos más típicos.",
+        url: "https://appfisica.netlify.app/",
     }
 ]
