@@ -46,13 +46,6 @@ const MenuActive = ({ visible }: Props) => {
 
                 <NavLink
                     className={({ isActive }) => `${styles.link} ${isActive ? styles.active : ''}`}
-                    to="/contact"
-                >
-                    Contacto
-                </NavLink>
-
-                <NavLink
-                    className={({ isActive }) => `${styles.link} ${isActive ? styles.active : ''}`}
                     to="/projects"
                 >
                     Proyectos

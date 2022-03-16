@@ -18,7 +18,7 @@ export const validationSchema = Yup.object({
         .required('Por favor, ingrese su email.'),
 
     msg: Yup.string()
-        .min(10, 'Porfavor, ingrese al menos 10 caracteres.')
+        .min(10, 'Por favor, ingrese al menos 10 caracteres.')
         .required('Por favor, envíame algún mensaje.')
 })
 

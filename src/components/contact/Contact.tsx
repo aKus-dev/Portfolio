@@ -37,7 +37,8 @@ const Contact = () => {
                 Envíame un mensaje
             </motion.h2>
 
-        
+
+
             <FormContact />
 
         </section>

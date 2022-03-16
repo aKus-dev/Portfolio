@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import styles from '../../../styles/home/contact/contact.module.css'
+import styles from '../../../styles/home/contact/moreaboutme.module.css'
 
 const transitionConfig = {
     type: "spring",
@@ -14,7 +14,7 @@ const viewportConfig = {
 }
 
 
-const Contact = () => {
+const MoreAboutMe = () => {
     return (
         <div className={styles.container}>
             <div>
@@ -48,4 +48,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default MoreAboutMe;
