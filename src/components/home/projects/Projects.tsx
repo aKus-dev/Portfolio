@@ -4,19 +4,19 @@ import { descriptionsHome } from '../../../data';
 
 import styles from '../../../styles/home/projects/projects.module.css'
 import Project from './Project';
+import { ProjectContextProvider } from '../../../contexts/ProjectContextProvider';
 
 
 const transitionConfig = {
     type: "spring",
-    duration: 1,
-    bounce: 0.65
+    duration: 1.25,
+    bounce: 0.3
 }
 
 const viewportConfig = {
     once: true,
     margin: "0px 0px -100px 0px"
 }
-
 
 const Projects = () => {
 
@@ -51,23 +51,29 @@ const Projects = () => {
                 </div>
             </div>
 
+            <ProjectContextProvider>
+                <motion.div className={styles.projectsContainer}
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={transitionConfig}
+                    viewport={viewportConfig}>
+                    {
 
-            <div className={styles.projectsContainer}>
-                {
-                    descriptionsHome.map(({id,year, title, desc, url}) => (
-                        <Project
-                            year={year}
-                            title={title}
-                            animateX={-50}
-                            img={id}
-                            description={desc}
-                            url={url}
-                        />
-                    ))
-                }
+                        descriptionsHome.map(({ id, title, desc, url, github }, index) => (
+                            <Project
+                                key={index}
+                                title={title}
+                                img={id}
+                                description={desc}
+                                url={url}
+                                github={github}
+                                index={index}
+                            />
+                        ))
 
-
-            </div>
+                    }
+                </motion.div>
+            </ProjectContextProvider>
         </section>
     )
 }

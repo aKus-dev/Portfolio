@@ -1,55 +1,84 @@
 import { motion } from 'framer-motion';
+import { MouseEvent, useContext, useState } from 'react';
 import styles from '../../../styles/home/projects/project.module.css'
+import { ProjectContext } from '../../../contexts/ProjectContext';
 
 interface Props {
-    year: string;
     title: string;
     img: string;
     url: string;
+    github: string;
     description: string;
-    animateX: number;
-}
-
-const transitionConfig = {
-    type: "spring",
-    duration: 1.25,
-    bounce: 0.3
-}
-
-const viewportConfig = {
-    once: true,
-    margin: "0px 0px -100px 0px"
+    index: number;
 }
 
 
-const Project = ({ year, title, description, url, img, animateX }: Props) => {
+const Project = ({ title, description, url, github, index, img }: Props) => {
+
+    const { activeProject, setActiveProject } = useContext(ProjectContext);
+
+    const handleProjectClick = (e: MouseEvent<HTMLDivElement>) => {
+        const target = e.target as Element;
+
+        if (target.nodeName === 'A' || target.nodeName === 'I') return;
+
+        document.querySelector('.active')?.classList.remove('active')
+
+        if (target.classList.contains(styles.container)) {
+            target.classList.add('active')
+        } else {
+            target.parentElement?.classList.add('active')
+        }
+
+        const id = target.getAttribute('data-id');
+
+        if (id) {
+            setActiveProject(parseInt(id));
+        }
+    }
 
     return (
         <motion.article
-            initial={{ opacity: 0, x: animateX }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={transitionConfig}
-            viewport={viewportConfig}
+            data-id={index.toString()}
+            onClick={handleProjectClick}
             style={{ backgroundImage: `url(../../../img/projects/${img}.jpg)` }}
-            className={styles.container}
+            className={`${styles.container} ${index === 0 && 'active'}`}
         >
 
-            <div className={styles.content}>
+            {
+                index === activeProject && (
+                    <motion.div
+                        data-id={index.toString()}
+                        className={styles.content}
+                        initial={{ display: 'none' }}
+                        animate={{ display: 'flex' }}
+                        transition={{ delay: 0.35 }}
+                    >
+                        <h2 className={styles.title}>{title}</h2>
+                        <p className={styles.desc}>{description}</p>
 
-                <span className={styles.year}>{year}</span>
+                        <div className={styles.linkContainer}>
+                            <div className={styles.links}>
+                                <a href={url} target="_blank">
+                                    <i className="fa-solid fa-link"></i>
+                                    Ver proyecto
+                                </a>
+                            </div>
 
-                <p className={styles.title}>{title}</p>
-                <p className={styles.subtitle}>{description}</p>
+                            <div className={styles.links}>
+                                <a href={github} target="_blank">
+                                    <i className="fa-brands fa-github"></i>
+                                    Ver repositorio
+                                </a>
+                            </div>
+                        </div>
 
-                <a target="_blank" rel="noreferrer" href={url}>
-                    <p className={styles.view}>
+                    </motion.div>
+                )
+            }
 
-                        Ver proyecto  <i className="fas fa-long-arrow-alt-right arrow-right"></i>
 
-                    </p>
-                </a>
-            </div>
-        </motion.article>
+        </motion.article >
 
     )
 }

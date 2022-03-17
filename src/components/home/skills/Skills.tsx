@@ -44,6 +44,7 @@ const Skills = () => {
                 {
                     skills.map(({title, src}, i) => (
                         <motion.div
+                            key={i}
                             initial={{ scale: 0 }}
                             whileInView={{ scale: 1 }}
                             transition={{ ...transitionConfig, delay: delays[i] }}

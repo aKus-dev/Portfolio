@@ -37,18 +37,25 @@
     font-weight: bold;
 }
 
+.projectsContainer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 @media (min-width: 768px) {
     .subtitle, .subtitle i {
         font-size: 6rem;
     }
-
-    .projectsContainer {
-        display: grid;
-        gap: 5rem;
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
+@media (min-width: 1200px) {
+    .projectsContainer {
+        min-height: 75vh;
+        flex-direction: row;
+    }
+}
 
 .barContainer {
     display: inline-block;

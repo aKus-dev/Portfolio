@@ -26,6 +26,14 @@ a {
     overflow: hidden;
 }
 
+.active {
+    flex-grow: 1;
+}
+
+.grayscale {
+    filter: grayscale(70%);
+}
+
 body::-webkit-scrollbar {
     background-color: #0f141e;
     width: .6rem;
@@ -52,3 +60,4 @@ section {
         padding: 0 4rem;
     }
 }
+

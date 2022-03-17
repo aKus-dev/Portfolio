@@ -60,30 +60,30 @@ export const descriptionsProjects: DescriptionProjectsProps[] = [
 export const descriptionsHome = [
     {
         id: "quiz",
-        year: "2022",
         title: "Quiz App",
         desc: "Aplicación de preguntas y respuestas que cuenta con distintas dificultades y categorías.",
         url: "https://akusquiz.vercel.app/",
+        github: 'https://github.com/aKus-web/Quiz-app'
     },
     {
         id: "music",
-        year: "2022",
         title: "Music",
         desc: "Aplicación que permite buscar y reproducir canciones. Se puede buscar por nombre, banda o género.",
         url: "https://akusmusic.vercel.app/",
+        github: 'https://github.com/aKus-web/Music-app'
     },
     {
         id: "chat",
-        year: "2021",
         title: "Chat institucional",
         desc: "Aplicación para una escuela, la cual se pueden registrar alumnos y profesores. Cuenta con las funcionalidades de poder enviar consultas y chatear.",
         url: "https://chataurum.000webhostapp.com/",
+        github: 'https://github.com/aKus-web/AURUM'
     },
     {
         id: "fisica",
-        year: "2021",
         title: "Circuitos física",
         desc: "Aplicación de física que calcula la resistencia total de un circuito y su intensidad. Para ello se han utilizado los circuitos más típicos.",
         url: "https://appfisica.netlify.app/",
-    }
+        github: 'https://github.com/aKus-web/Fisica'
+    },
 ]
