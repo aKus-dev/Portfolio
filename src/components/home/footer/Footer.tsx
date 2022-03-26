@@ -14,18 +14,25 @@ const Footer = () => {
                 </div>
 
                 <div className={styles.dataContainer}>
-                    <p className={styles.title}>Redes sociales</p>
+                    <p className={styles.title}>Más de mí</p>
 
-                    <a className={styles.mail} href="https://www.linkedin.com/in/agustin-vega/" target="_blank" rel="noreferrer" >
-                        <i className={`fab fa-linkedin ${styles.icon}`} ></i>
-                        Linkedin
-                    </a>
+                    <nav>
+                        <a className={styles.mail} href="./Curriculum.pdf" download rel="noreferrer" >
+                            <i className={`fa-solid fa-download ${styles.icon}`} ></i>
+                            Curriculum
+                        </a>
 
-                    <a className={styles.mail} href="https://github.com/aKus-web" target="_blank" rel="noreferrer" >
-                        <i className={`fab fa-github ${styles.icon}`} ></i>
-                        GitHub
-                    </a>
+                        <a className={styles.mail} href="https://www.linkedin.com/in/agustin-vega/" target="_blank" rel="noreferrer" >
+                            <i className={`fab fa-linkedin ${styles.icon}`} ></i>
+                            Linkedin
+                        </a>
 
+
+                        <a className={styles.mail} href="https://github.com/aKus-web" target="_blank" rel="noreferrer" >
+                            <i className={`fab fa-github ${styles.icon}`} ></i>
+                            GitHub
+                        </a>
+                    </nav>
                 </div>
             </div>
         </footer>
