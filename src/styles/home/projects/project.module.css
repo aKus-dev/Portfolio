@@ -6,6 +6,7 @@
     flex-basis: 50px;
     margin: 0 auto;
     border-radius: 1rem;
+    max-height: 700px;
 
     background-position: center;
     background-size: cover;
@@ -67,4 +68,13 @@
         padding: 5rem;
     }
 }
+
+@media (min-width: 1500px) {
+    .title,
+    .desc {
+        text-align: start;
+    }
+
+}
+
 

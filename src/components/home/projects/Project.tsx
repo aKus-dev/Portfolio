@@ -54,8 +54,10 @@ const Project = ({ title, description, url, github, index, img }: Props) => {
                         animate={{ display: 'flex' }}
                         transition={{ delay: 0.35 }}
                     >
+
                         <h2 className={styles.title}>{title}</h2>
                         <p className={styles.desc}>{description}</p>
+
 
                         <div className={styles.linkContainer}>
                             <div className={styles.links}>

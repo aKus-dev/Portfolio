@@ -4,6 +4,12 @@
     padding: 0 2.2rem;
 }
 
+@media (min-width: 1500px) {
+    .container {
+        text-align: center;
+    }
+}
+
 @media (min-width: 768px) {
     .container {
         padding: 0 4rem;
@@ -42,6 +48,13 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    max-width: 1400px;
+}
+
+@media (min-width: 1500px) {
+    .projectsContainer {
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 768px) {
