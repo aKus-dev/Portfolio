@@ -5,6 +5,10 @@
     flex-wrap: wrap;
 }
 
+.no-margin {
+    margin: 0!important;
+}
+
 .tag {
     user-select: none;
     font-family: Helvetica, Arial, sans-serif;
@@ -69,9 +73,14 @@
     border: 2.5px solid #b90707;
 }
 
-.Tailwind {
+.TailwindCSS {
     color: white;
     background: #07adca;
     border: 2.5px solid #0a444e;
 }
 
+.Redux {
+    color: white;
+    background: #7046b2;
+    border: 2.5px solid #5d2bac;
+}

@@ -1,14 +1,23 @@
 
 export interface DescriptionProjectsProps {
-    id:string;
-    desc:string;
-    url:string;
-    title:string;
-    tags: validateTypes[];
-  }
-  
-  
-  export type validateTypes = 
+  id: string;
+  desc: string;
+  url: string;
+  title: string;
+  tags: validateTypes[];
+}
+
+export interface IDescriptionHome {
+  id: string;
+  desc: string;
+  url: string;
+  title: string;
+  github:string;
+  tags: validateTypes[];
+}
+
+
+export type validateTypes =
   | "HTML"
   | "CSS"
   | "JavaScript"
@@ -18,4 +27,5 @@ export interface DescriptionProjectsProps {
   | "React"
   | "SASS"
   | "Node"
-  | "Tailwind"
+  | "TailwindCSS"
+  | "Redux"

@@ -59,7 +59,7 @@ const Projects = () => {
                     viewport={viewportConfig}>
                     {
 
-                        descriptionsHome.map(({ id, title, desc, url, github }, index) => (
+                        descriptionsHome.map(({ id, title, desc, url, github, tags }, index) => (
                             <Project
                                 key={index}
                                 title={title}
@@ -68,6 +68,7 @@ const Projects = () => {
                                 url={url}
                                 github={github}
                                 index={index}
+                                tags={tags}
                             />
                         ))
 

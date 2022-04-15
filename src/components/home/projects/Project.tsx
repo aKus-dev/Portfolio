@@ -2,6 +2,9 @@ import { motion } from 'framer-motion';
 import { MouseEvent, useContext, useState } from 'react';
 import styles from '../../../styles/home/projects/project.module.css'
 import { ProjectContext } from '../../../contexts/ProjectContext';
+import TagContainer from '../../projects/TagContainer';
+import Tag from '../../projects/Tag';
+import { validateTypes } from '../../../interfaces/interfaces';
 
 interface Props {
     title: string;
@@ -10,10 +13,11 @@ interface Props {
     github: string;
     description: string;
     index: number;
+    tags: validateTypes[];
 }
 
 
-const Project = ({ title, description, url, github, index, img }: Props) => {
+const Project = ({ title, description, url, github, index, img, tags }: Props) => {
 
     const { activeProject, setActiveProject } = useContext(ProjectContext);
 
@@ -56,6 +60,13 @@ const Project = ({ title, description, url, github, index, img }: Props) => {
                     >
 
                         <h2 className={styles.title}>{title}</h2>
+
+                        <TagContainer noMargin>
+                            {
+                                tags.map(tag => <Tag type={tag} />)
+                            }
+                        </TagContainer>
+
                         <p className={styles.desc}>{description}</p>
 
 

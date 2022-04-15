@@ -36,8 +36,6 @@ h2 {
 
 .content {
     transition: .35s;
-    opacity: 0;
-    visibility: hidden;
     border-radius: .75rem;
     background-color: rgba(15, 20, 30, .9);
     top: 0;
@@ -70,6 +68,10 @@ h2 {
 
 
 @media (min-width: 900px) {
+    .content {
+        opacity: 0;
+        visibility: hidden;
+    }
 
     .singleProjectContainer img {
         margin: 0;
