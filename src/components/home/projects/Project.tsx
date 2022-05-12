@@ -63,7 +63,7 @@ const Project = ({ title, description, url, github, index, img, tags }: Props) =
 
                         <TagContainer noMargin>
                             {
-                                tags.map(tag => <Tag type={tag} />)
+                                tags.map(tag => <Tag key={Math.random() * 10} type={tag} />)
                             }
                         </TagContainer>
 

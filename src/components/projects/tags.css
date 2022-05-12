@@ -84,3 +84,15 @@
     background: #7046b2;
     border: 2.5px solid #5d2bac;
 }
+
+.NextJS {
+    color: #000;
+    background: #ffffff;
+    border: 2.5px solid #020202;
+}
+
+.Jotai {
+    color: #414040;
+    background: #ffffff;
+    border: 2.5px solid #414040;
+}

@@ -29,3 +29,5 @@ export type validateTypes =
   | "Node"
   | "TailwindCSS"
   | "Redux"
+  | "NextJS"
+  | 'Jotai'

@@ -6,6 +6,13 @@ import { DescriptionProjectsProps, IDescriptionHome } from "./interfaces/interfa
 // Projectos que se muestran en /projects
 export const descriptionsProjects: DescriptionProjectsProps[] = [
     {
+        id: "tasks",
+        title: "Task Management",
+        desc: "Permite crear distintas categorías para agupar tareas, además de cambiar su estado, editarlas y/o eliminarlas.",
+        url: "https://taskakus.vercel.app/",
+        tags: ["HTML", "TailwindCSS", "React", "Jotai", "TypeScript"]
+    },
+    {
         id: "jobs",
         title: "Search Jobs",
         desc: "Se listan distintos trabajos, en los cuales se puede filtrar según ciertos tags (al hacerles click)",
@@ -100,11 +107,11 @@ export const descriptionsHome: IDescriptionHome[]  = [
         tags: ["HTML", "SASS", "JavaScript", "PHP"]
     },
     {
-        id: "fisica",
-        title: "Circuitos física",
-        desc: "Aplicación de física que calcula la resistencia total de un circuito y su intensidad. Para ello se han utilizado los circuitos más típicos.",
-        url: "https://appfisica.netlify.app/",
-        github: 'https://github.com/aKus-web/Fisica',
-        tags: ["HTML", "CSS", "JavaScript"]
+        id: "tasks",
+        title: "Task Management",
+        desc: "Permite crear distintas categorías para agupar tareas, además de cambiar su estado, editarlas y/o eliminarlas.",
+        url: "https://taskakus.vercel.app/",
+        github: 'https://github.com/aKus-web/Task-manager',
+        tags: ["HTML", "TailwindCSS", "React", "Jotai", "TypeScript"]
     },
 ]
