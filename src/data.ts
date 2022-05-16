@@ -6,6 +6,13 @@ import { DescriptionProjectsProps, IDescriptionHome } from "./interfaces/interfa
 // Projectos que se muestran en /projects
 export const descriptionsProjects: DescriptionProjectsProps[] = [
     {
+        id: "markdown",
+        title: "Markdown Editor",
+        desc: "Editor de makrdown con preview en tiempo real",
+        url: "https://akus-markdown.vercel.app/",
+        tags: ["HTML", "TailwindCSS", "React", "TypeScript", "Jotai"]
+    },
+    {
         id: "tasks",
         title: "Task Management",
         desc: "Permite crear distintas categorías para agupar tareas, además de cambiar su estado, editarlas y/o eliminarlas.",
@@ -75,12 +82,12 @@ export const descriptionsProjects: DescriptionProjectsProps[] = [
 // Projectos que se muestran en la página principal
 export const descriptionsHome: IDescriptionHome[]  = [
     {
-        id: "jobs",
-        title: "Search Jobs",
-        desc: "Se listan distintos trabajos, en los cuales se puede filtrar según ciertos tags (al hacerles click)",
-        url: "https://akusjobs.vercel.app/",
-        github: 'https://github.com/aKus-web/Search-jobs',
-        tags: ["HTML", "TailwindCSS", "React", "Redux", "TypeScript"]
+        id: "markdown",
+        title: "Markdown Editor",
+        desc: "Editor de makrdown con preview en tiempo real",
+        url: "https://akus-markdown.vercel.app/",
+        github: 'https://github.com/aKus-web/Markdown-editor',
+        tags: ["HTML", "TailwindCSS", "React", "TypeScript", "Jotai"]
     },
     {
         id: "quiz",
