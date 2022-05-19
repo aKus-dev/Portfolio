@@ -28,7 +28,7 @@ const Footer = () => {
                         </a>
 
 
-                        <a className={styles.mail} href="https://github.com/aKus-web" target="_blank" rel="noreferrer" >
+                        <a className={styles.mail} href="https://github.com/aKus-dev" target="_blank" rel="noreferrer" >
                             <i className={`fab fa-github ${styles.icon}`} ></i>
                             GitHub
                         </a>
