@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import styles from '../../styles/about/about.module.css';
+import dayjs from 'dayjs';
 
 
 const transitionConfig = {
@@ -13,6 +14,8 @@ const viewportConfig = {
 
 
 const Personal = () => {
+    const birthday = '2002-02-14'
+
     return (
         <motion.div
             className={styles.personalContainer}
@@ -38,7 +41,7 @@ const Personal = () => {
                     </motion.h3>
 
                     <motion.p className={styles.subtitle} initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} transition={transitionConfig} viewport={viewportConfig} >
-                        21
+                        {dayjs().diff(birthday, 'years')}
                     </motion.p>
                 </div>
 
@@ -61,7 +64,7 @@ const Personal = () => {
                 </motion.h3>
 
                 <motion.p className={styles.subtitle} initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} transition={transitionConfig} viewport={viewportConfig} >
-                    UTU Informática 
+                    UTU Informática
                 </motion.p>
             </div>
 
