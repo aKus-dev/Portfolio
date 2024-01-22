@@ -38,7 +38,7 @@ const Personal = () => {
                     </motion.h3>
 
                     <motion.p className={styles.subtitle} initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} transition={transitionConfig} viewport={viewportConfig} >
-                        20
+                        21
                     </motion.p>
                 </div>
 
